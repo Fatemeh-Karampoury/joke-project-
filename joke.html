@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    background: linear-gradient(to left bottom,
+        lightgreen, lightyellow, lightgreen);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+  }
+
+  .container {
+    background-color: rgba(100, 300, 500, .15);
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .3);
+    width: 85%;
+    text-align: center;
+    color: darkgreen;
+    border-radius: 20px;
+    font-size: 25px;
+  }
+
+  .heading {
+    font-size: 35px;
+    font-weight: 200;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+  }
+
+  .joke {
+    font-size: 22px;
+    font-weight: 500px;
+    margin: 40px;
+  }
+
+  .btn {
+    font-size: 18px;
+    font-weight: 700px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(250, 250, 250, .3);
+    color: darkgreen;
+    width: 300px;
+    border-color: rgba(250, 250, 250, .6);
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  .btn:hover {
+    background-color: rgba(250, 250, 250, .6);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .3);
+    transition: all 300ms ease;
+  }
+
+  @media screen and (max-width: 480px) {
+    .search-result{
+        width: 100%;
+    }
+    .heading{
+        flex-direction: column;
+        font-size: 22px;
+    }
+
+    #btn{
+        margin-bottom: 30px;
+        width:80%;
+        font-size: 18px;
+    }
+}
+
+
+</style>
+
+<body>
+  <div class="container">
+    <h1 class="heading">sdwd wedwq byy huuhhu ikm</h1>
+    <p class="joke" id="joke">dadf uedh</p>
+
+    <button class="btn" id="btn">tell me a joke</button>
+    <div id="test">
+    </div>
+  </div>
+
+  <script src="joke.js"></script>
+</body>
+
+</html>
